@@ -1,0 +1,143 @@
+@import "tailwindcss";
+
+/* ── Base Reset & Variables ── */
+:root {
+  /* App theme vars (Light) */
+  --background: #f8f9fc;
+  --card: #ffffff;
+  --muted: #f1f5f9;
+  --border: #e2e8f0;
+  --text: #0f172a;
+  --text-muted: #64748b;
+  --text-h: #020617;
+
+  /* Brand Colors */
+  --accent: #6366f1;
+  --accent-hover: #4f46e5;
+  --accent-bg: rgba(99, 102, 241, 0.1);
+  --accent-border: rgba(99, 102, 241, 0.5);
+
+  /* Typography */
+  --sans: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+  --mono: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, monospace;
+
+  color-scheme: light;
+  background: var(--background);
+  color: var(--text);
+  font-family: var(--sans);
+  font-size: 16px; /* Restored to comfortable 16px */
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* ── Dark mode: manual toggle (.dark class on <html>) ── */
+html.dark {
+  color-scheme: dark;
+  --background: #0b0f19;
+  --card: #111827;
+  --muted: #1e293b;
+  --border: #334155;
+  --text: #f8fafc;
+  --text-muted: #94a3b8;
+  --text-h: #ffffff;
+  
+  --accent: #818cf8;
+  --accent-hover: #6366f1;
+  --accent-bg: rgba(129, 140, 248, 0.15);
+  --accent-border: rgba(129, 140, 248, 0.5);
+}
+
+/* ─ Global Styles ── */
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--text);
+  transition: background-color 0.3s ease, color 0.3s ease; 
+}
+
+/* ─ Typography ── */
+h1, h2, h3, h4, h5, h6 {
+  margin: 0;
+  font-weight: 600;
+  color: var(--text-h);
+  line-height: 1.2;
+}
+
+/* Proportional heading sizes for 16px base */
+h1 { 
+  font-size: 1.875rem; /* 30px - Perfect for page titles */
+  letter-spacing: -0.025em; 
+}
+h2 { 
+  font-size: 1.5rem; /* 24px - Perfect for section titles */
+  letter-spacing: -0.025em; 
+}
+
+p { margin: 0; }
+
+/* ── Interactive Elements ── */
+button, a, input, select, textarea {
+  font-family: inherit;
+  transition: all 0.2s ease;
+}
+
+button {
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: not-allowed;
+}
+
+/* ── Custom Scrollbar (Professional & Clean) ── */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--text-muted);
+}
+
+/* Firefox */
+* {
+  scrollbar-width: thin;
+  scrollbar-color: var(--border) transparent;
+}
+
+/* ── Code Blocks ── */
+code, .counter {
+  font-family: var(--mono);
+  display: inline-flex;
+  border-radius: 4px;
+  color: var(--text-h);
+}
+
+code {
+  font-size: 0.875rem;
+  line-height: 1.35;
+  padding: 2px 6px;
+  background: var(--muted);
+  border: 1px solid var(--border);
+}
