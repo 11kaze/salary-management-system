@@ -23,7 +23,7 @@ Built as a modern replacement for Excel-based HR workflows.
 *Deep-dive analytics with salary band distributions*
 
 ### Bulk Operations
-![Bulk Upload](.\sample_images\Bulkoperations.png)
+![Bulk Upload](./sample_images/Bulkoperations.png)
 *CSV-based bulk employee import and salary updates*
 
 ------------------------------------------------------------------------
