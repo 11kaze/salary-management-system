@@ -5,6 +5,27 @@ A production-grade web application for managing salary data for
 
 Built as a modern replacement for Excel-based HR workflows.
 
+# Sample UI Screenshots
+
+### Login
+![Login View](.\sample_images\Login.png)
+
+### Dashboard
+![Dashboard View](.\sample_images\Dashboard.png)
+*Interactive dashboard with department and country filters*
+
+### Employee Management
+![Employees](.\sample_images\Employees.png)
+*Manage 10,000+ employees with pagination and search*
+
+### Analytics
+![Analytics](.\sample_images\Analytics.png)
+*Deep-dive analytics with salary band distributions*
+
+### Bulk Operations
+![Bulk Upload](.\sample_images\Bulkoperations.png)
+*CSV-based bulk employee import and salary updates*
+
 ------------------------------------------------------------------------
 
 # 🎯 Overview
